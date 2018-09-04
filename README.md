@@ -3,15 +3,15 @@
 interface and click on run button.
 
   To execute using terminal:
-  - Open project folder and execute: java -cp bankrupt.jar com.montanher.Main
+  - Open project folder and execute: `java -cp monopoly-simulator.jar com.montanher.Main`
 
 
 ## How to compile using terminal:
   - First you need kotlin installed:
-  brew install kotlin
+  `brew install kotlin`
 
   - Open project folder and compile with
-  kotlinc . -include-runtime -d bankrupt.jar
+  `kotlinc . -include-runtime -d monopoly-simulator.jar`
 
 
 ## Parameters:
@@ -23,6 +23,7 @@ each match (MAX_NUMBER_ROUNDS) and the total number of match of the simulation
 of players in the match, we have 4 types: impulsive, picky, cautious and random.
 If you you like a match with two impulsive players and other cautious one,
 the method would be:
+  ```
   private fun loadPlayers(): ArrayList<Player> {
     return arrayListOf (
       ImpulsivePlayer(START_PLAYER_MONEY, -1, 0),
@@ -30,6 +31,7 @@ the method would be:
       CautiousPlayer(START_PLAYER_MONEY, -1, 0)
     )
   }
+  ```
   You must notice that you can change the numbers of player as well.
 
   In the class Player it's possible to change the amount of money each player
