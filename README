@@ -1,4 +1,4 @@
-  ##How to run:
+## How to run:
   The code was developed with IntelliJ IDE, one option is to open the project with
 interface and click on run button.
 
@@ -6,7 +6,7 @@ interface and click on run button.
   - Open project folder and execute: java -cp bankrupt.jar com.montanher.Main
 
 
-  ##How to compile using terminal:
+## How to compile using terminal:
   - First you need kotlin installed:
   brew install kotlin
 
@@ -14,7 +14,7 @@ interface and click on run button.
   kotlinc . -include-runtime -d bankrupt.jar
 
 
-  ##Parameters:
+## Parameters:
   This code was made for easily change some parameters if necessary.
   The class "Main" has the logic of the simulation, at there we can change the
 initial amount of money of each player (START_PLAYER_MONEY), limit of rounds for
